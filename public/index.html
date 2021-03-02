@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="../assets/style.css">
+  <title>Preço Interativo</title>
+
+
+</head>
+<body>
+
+
+    <div class="container">
+        <header>
+            <h1>Preço com base no tráfego</h1>
+            <p>  Increva-se para nosso teste de 30 dias. Não é necessário cartão de crédito </p>
+        </header>
+
+        <div class="box">
+            <main>
+                <div>
+                    <div class="plan-information">
+                        <p><span class="page-views">10K</span> VISUALIZAÇÕES</p>
+                        <span class="price">$<span>15.00</span></span>
+                        <p class="price-month">/MÊS</p>
+                    </div>
+                </div>
+
+                <div class="slide-area">
+                    <div class="slide-bar">
+                        <input type="range" name="range" id="range" class="range1" min="0" max="4" value="0" step="1" onchange="Price.priceRange(value)">
+                    </div>
+                </div>
+
+                <div class="choice-plan">
+                    <div>Plano mensal</div>
+                    <div class="choice-field" onclick="Price.checkDiscount(true)"><button class="btn-choice"> </button></div>
+                    <div class="discount-field">Plano anual <p class="discount">25% discount</p></div>
+                </div>
+
+                <hr>
+
+                <div class="description-area">
+                    <ul>
+                        <li><img src="../assets/images/icon-check.svg">Sites ilimitados</li>
+                        <li><img src="../assets/images/icon-check.svg">Relatórios semanais via email</li>
+                        <li><img src="../assets/images/icon-check.svg">100% seguro</li>
+                    </ul>
+                    <button class="btn-submit">Cadastrar-se</button>
+                </div>
+                
+            </main>
+        </div>
+    </div>
+  
+  <script src="../assets/script.js"></script>
+</body>
+</html>

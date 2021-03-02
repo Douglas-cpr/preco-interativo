@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+:root {
+    --dark-blue: hsl(227, 35%, 25%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+
+    background: hsl(230, 100%, 99%);
+}
+
+header {
+    text-align: center;
+    color: var(--dark-blue);
+
+    padding-top: 6rem;
+
+    background: url(../assets/images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 70px;
+
+    width: auto;
+    height: 500px;
+}
+
+.container {
+    background: url(../assets/images/bg-pattern.svg);
+ 
+    background-size: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color:  hsl(225, 20%, 60%);
+}
+
+main {
+    background: white;
+    box-shadow: 5px 5px 15px 5px rgba(219, 219, 219, 0.51);
+
+    margin-top: -14rem;
+
+    width: 600px;
+    height: 500px;
+
+    border-radius: .3rem;
+}
+
+hr {
+    opacity: .3;
+    margin-top: 2rem;
+}
+
+.plan-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4rem;
+    font-size: 17px;
+    color:  hsl(225, 20%, 60%);
+}
+
+.plan-information p {
+    letter-spacing: 1px;
+}
+
+.price {
+    color: var(--dark-blue);
+    font-weight: bold;
+
+    margin-left: 290px;
+    position: absolute;
+    font-size: 35px;
+}
+
+.slide-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-bar {
+    width: 28%;
+    background: hsl(224, 65%, 95%);
+    height: 5px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.range1 {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 12px;
+    border-radius: 1rem;
+}
+.range1:focus {
+    outline: none;
+}
+
+.range1::-webkit-slider-runnable-track {
+    width: 50%;
+    height: 10px;
+    cursor: pointer;
+    /* background: #d9d3da; */
+    border-radius: 25px;
+    border: 0px solid #000101;
+
+  }
+
+.range1::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 45px;
+    width: 45px;
+    border-radius: 7px;
+    background-image: url(../assets/images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(174, 86%, 45%);
+    background-position: center;
+    box-shadow: 0px 0px 10px 3px hsla(174, 86%, 45%, 0.404);
+    border-radius: 99px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -17px;
+}
+
+.choice-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3.4rem 0 2rem 6rem;
+
+}
+
+.choice-field {
+    background: hsl(174, 86%, 45%);
+
+    width: 70px;
+    height: 30px;
+
+    border-radius: 99px;
+
+    margin: 0 2rem;
+
+    cursor: pointer;
+}
+
+.btn-choice {
+    position: absolute;
+    background: hsl(224, 65%, 95%);
+    border: none;
+
+    margin: .3rem;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 99px;
+
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+.btn-choice.on {
+    transition: .3s;
+    margin-left: 40px;
+}
+
+.discount-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount.on {
+    visibility: visible;
+}
+
+.discount {
+    visibility: hidden;
+
+    font-size: 14px;
+    font-weight: bold;
+    color:  hsl(15, 100%, 70%);
+    background: hsla(15, 88%, 75%, 0.24);
+
+    border-radius: 1rem;
+
+    height: 30px;
+    width: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 1rem;
+}
+
+.description-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 3rem;
+}
+
+.description-area li {
+    list-style: none;
+}
+
+.description-area li img {
+    padding: 0 .5rem;
+}
+
+.btn-submit {
+    cursor: pointer;
+    color: white;
+    background: var(--dark-blue);
+    font-weight: bold;
+
+    outline: none;
+
+    width: 160px;
+    height: 50px;
+
+    opacity: .8;
+
+    border-radius: 2rem;
+    border: none;
+}
+
+.btn-submit:hover {
+    transition: .3s;
+    opacity: 1;
+}
+
+
